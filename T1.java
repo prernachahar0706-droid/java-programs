@@ -1,0 +1,17 @@
+package ternary;
+
+import java.util.Scanner;
+
+public class T1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a, b, c, max = 0;
+        a = sc.nextInt();
+        b = sc.nextInt();
+        c = sc.nextInt();
+        max = a > b ? (a > c ? a : c) : (b > c ? b : c);
+        System.out.println(max);
+        sc.close();
+    }
+
+}
